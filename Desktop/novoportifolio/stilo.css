@@ -400,17 +400,8 @@ footer {
     }
 
     .navegacao {
-        overflow-x: hidden;
-        width: 100%;
+        display: none;
     }
 
-    .menu {
-        display: flex;
-        list-style: none;
-        gap: 1.2rem;
-        padding: 5px;
-        width: 100%;
-        overflow-x: hidden;
-    }
 
 }

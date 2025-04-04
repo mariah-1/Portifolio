@@ -329,6 +329,17 @@ h1 {
     color: var white;
 }
 
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
 @keyframes flutuar {
 
     0%,
@@ -342,6 +353,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    
+    body {
+        background-image: none;
+        background-color: rgba(152, 131, 241, 0.212);
+    }
 
     .projetos__caixa {
         flex-direction: column;

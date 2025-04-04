@@ -12,16 +12,16 @@ body {
     background-image: url('img/fundo.png');
     background-color: #A68BC8;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
 
 .navegacao {
-    position: fixed;
     top: 0;
     background: rgba(255, 255, 255, 0.753);
     width: 100%;
     z-index: 100;
     padding: 1.5%;
+    position: fixed;
 }
 
 .menu {
@@ -29,6 +29,7 @@ body {
     justify-content: center;
     list-style: none;
     gap: 3rem;
+    
 }
 
 .menu__link {
@@ -330,7 +331,7 @@ h1 {
 }
 
 footer {
-    background-color: white;
+    background-color: #FAF9FE;
     color: black;
     text-align: center;
     padding: 10px;
@@ -401,7 +402,6 @@ footer {
     .navegacao {
         overflow-x: hidden;
         width: 100%;
-        position: fixed;
     }
 
     .menu {
@@ -411,7 +411,6 @@ footer {
         padding: 5px;
         width: 100%;
         overflow-x: hidden;
-        margin: auto;
     }
 
 }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifólio maria helena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu__link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu__link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu__link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu__link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="img/foto perfil (1).png" alt="foto perfil" class="foto-perfil-desktop">
+        <img src="img/foto perfil 2.png" alt="foto perfil" class="foto-perfil-celular">
+        <h1 class="cabecalho__titulo"> Maria Helena</h1>
+        <p class="cabecalho__paragrafo">Programadora em desenvolvimento</p>
+        <a class="botao-github" href="https://github.com/mariah-1?tab=repositories"> <img
+                src="img/github.png">GitHub</a>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre__titulo">Sobre mim</h2>
+        <div class="sobre__caixa">
+            <p class="sobre__paragrafo">Sou uma pessoa determinada e apaixonada por tecnologia. Dedico meu tempo ao
+                estudo da programação, aprimorando constantemente minhas habilidades em JavaScript, HTML e CSS. Busco
+                sempre soluções criativas e eficazes, refletindo meu compromisso com a inovação e a melhoria contínua.
+            </p>
+            <p class="sobre__paragrafo1">Atualmente, estou me preparando para iniciar meus estudos na trilha de backend
+                pelo programa ONE (Oracle Next Education) da Alura. Meu objetivo é crescer profissionalmente, conquistar
+                novas oportunidades e me destacar no mercado de tecnologia, sempre com dedicação e aprendizado contínuo.
+                🚀</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos__titulo">Meus projetos</h2>
+        <div class="projetos__caixa">
+
+            <div class="projetos__card">
+                <a class="linkProjetos" href="https://jogo-numero-secreto-blue-two.vercel.app/" target="_blank">
+                    <img src="img/jogo-do-numero.png" alt="projeto 1" class="projetos__imagem">
+                    <h3 class="titulo-projetos">Jogo do número secreto</h3>
+                    <p class="paragrafo-projetos">A cada tentativa, o jogo informa se o número inserido é maior ou
+                        menor, até o jogador acertar. O objetivo é adivinhar o número com o menor número de tentativas
+                        possível.</p>
+                </a>
+            </div>
+
+            <div class="projetos__card">
+                <a class="linkProjetos" href="https://amigo-secreto22.vercel.app/" target="_blank">
+                    <img src="img/amigo-secreto.png" alt="projeto 2" class="projetos__imagem">
+                    <h3 class="titulo-projetos">Amigo secreto</h3>
+                    <p class="paragrafo-projetos">É uma aplicação que facilita a organização de sorteios de amigo
+                        secreto. O usuário pode inserir os participantes e, ao clicar no botão de sorteio, o sistema
+                        automaticamente distribui os nomes de forma aleatória, garantindo que ninguém tire o próprio
+                        nome.</p>
+                </a>
+            </div>
+
+            <div class="projetos__card">
+                <a class="linkProjetos" href="https://verificador-de-idade-alpha.vercel.app/" target="_blank">
+                    <img src="img/verificador.png" alt="projeto 3" class="projetos__imagem">
+                    <h3 class="titulo-projetos">Verificador de idade e genero</h3>
+                    <p class="paragrafo-projetos">Permite que o usuário informe seu ano de nascimento e selecione seu
+                        gênero para descobrir sua idade e ver uma imagem correspondente à faixa etária e gênero. A
+                        aplicação oferece um feedback visual e textual, ajustando o estilo da página conforme a idade e
+                        o gênero selecionados.</p>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="certificados" class="certificados">
+        <h2 class="certificados__titulo">Meus Certificados</h2>
+        <div class="certificados__caixa">
+            <div class="certificado">
+                <a href="https://cursos.alura.com.br/user/mariaah1211/degree-logica-de-programacao-grupo8-one-855206/certificate">
+                <img src="img/certificado.png" alt="Certificado 1" class="certificado__imagem">
+                </a>
+
+            </div>
+            <div class="certificado">
+                <a href="https://cursos.alura.com.br/user/mariaah1211/degree-desenvolvimento-pessoal-grupo8-one-855197/certificate">
+                <img src="img/certificado02.png" alt="Certificado 2" class="certificado__imagem">
+                </a>
+
+            </div>
+            <div class="certificado certificado--oculto">
+                <a href="https://cursos.alura.com.br/user/mariaah1211/course/chatgpt-otimizando-qualidade-resultados/certificate">
+                <img src="img/certificado03.png" alt="Certificado 3" class="certificado__imagem">
+                </a>
+
+            </div>
+            <div class="certificado certificado--oculto">
+                <a href="https://cursos.alura.com.br/user/mariaah1211/course/git-github-compartilhando-colaborando-projetos/certificate">
+                <img src="img/certificado04.png" alt="Certificado 4" class="certificado__imagem">
+                </a>
+
+            </div>
+        </div>
+        <button id="verMaisBtn" class="ver-mais-btn">Ver mais</button>
+    </section>
+
+
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos__titulo">Entre em contato</h2>
+
+        <form id="formulario" class="formulario-contato" onsubmit="enviarWhats(event)">
+            <div class="quadrado-text-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="quadrado-text-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatssap</button>
+        </form>
+
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            var nome = document.getElementById('nome').value
+            var mensagem = document.getElementById('mensagem').value
+            var telefone = '5543991866599'
+
+            var texto = `Olá! Me chamo ${nome}, ${mensagem}`
+            var msgFormatada = encodeURIComponent(texto)
+
+            var url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            console.log(url)
+
+            window.open(url, '_blank')
+        }
+
+        document.getElementById('verMaisBtn').addEventListener('click', function () {
+
+            var certificadosOcultos = document.querySelectorAll('.certificado--oculto');
+
+            certificadosOcultos.forEach(function (certificado) {
+                certificado.style.display = 'block';
+            });
+            this.style.display = 'none';
+        });
+
+    </script>
+</body>
+<footer>
+    <p>&copy; 2025 MARIA HELENA</p>
+  </footer>
+
+</html>
